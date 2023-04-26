@@ -18,7 +18,13 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
+   
     - name: compilar o java
       run: |
        cd src
        javac -cp . Main.java
+       
+    - name: executando o projeto
+      run: |
+       cd src
+       java Main
